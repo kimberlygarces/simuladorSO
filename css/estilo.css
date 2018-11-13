@@ -1,0 +1,142 @@
+
+body{
+
+	margin: o;
+}
+
+video{
+
+	position: fixed;
+	min-width: 100%
+	min-height: 100%;
+	top:50%;
+	left: 50%;
+
+	transform: translatex(-50%) translatey(-50%);
+	z-index: -1;
+}
+
+
+#main_header{
+
+	height: 80px;
+}
+
+
+.main h1 {
+	text-align: center;
+}
+
+
+.listar h1 {
+
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h2, h3, h4 {
+	
+	font-family: Georgia, serif;
+	color: #641e16;
+}
+
+table.Proceso{
+	
+	font-family: Georgia, serif;
+	color: #FFFFFF;
+	height:100px;
+	width:700px;
+	margin:0 auto;
+	
+}
+
+table.Mostrar{
+	
+	font-family: Georgia, serif;
+	color: #FFFFFF;
+	height:50px;
+	width:1200px;
+	margin:0 auto;
+	
+}
+
+
+button:hover{
+
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+	
+}
+
+
+.btnNuevoP{
+
+
+  height:50px;
+  width:150px;
+  background-position:center;
+  
+}
+
+.btnListar{
+
+
+  height:50px;
+  width:150px;
+  background-position:center;
+
+
+}
+
+#btn1{
+
+	text-align: center;
+	background-color:#070719;
+   	opacity:0.6;
+   	filter:alpha(opacity=90); /* IE < 9.0 */ 
+	MARGIN: 0 auto ; 
+	height:50px;
+	width:700px;
+}
+
+#btn2{
+
+	text-align: center;
+	background-color:#070719;
+   	opacity:0.6;
+   	filter:alpha(opacity=90); /* IE < 9.0 */ 
+	MARGIN: 0 auto ; 
+	height:50px;
+	width:1200px;
+	
+
+}
+
+#listar{
+
+  	background-color:#070719;
+   	opacity:0.6;
+   	filter:alpha(opacity=90); /* IE < 9.0 */ 
+	MARGIN: 0 auto ; 
+	height:50px;
+	width:1000px;
+	font-family: Georgia, serif;
+
+
+}
+
+#main{
+
+  	background-color:#fdfefe;
+  	opacity:0.6;
+   	filter:alpha(opacity=90); /* IE < 9.0 */ 
+   	 
+	margin:0 auto ; 
+	height:90px;
+	width:1200px;
+	font-family: Georgia, serif;
+	color:#17202a ;
+
+
+}
