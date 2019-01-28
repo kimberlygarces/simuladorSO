@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>simulador de procesos</title>
-	<link href="css/estilo.css" type="text/css" rel="stylesheet"/> 
-	<link rel="stylesheet" href="img/url">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de procesos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
-<body background="img/fondo.jpeg">
+<body>
+		<header id=main_header>
+
+		<div class="jumbotron" >
+			<div class="container">
+				<div align="right">
+					<img align="left" src="img/Logo.png"  width="350" height="70"/>
+					<img align="right" src="img/carga.gif" width="70" height="70"/>
+					<h3>SISTEMAS OPERATIVOS  </h3>
+					<h5>SIMULADOR DE PROCESOS </h5></div>
+				</div>
+			</div>
+		</header>
 
 
-		<video src="img/fondo.mp4" autoplay loop muted poster="img/fondo.jpeg">
-		</video>
 
 	<br>
 	<header>
@@ -20,8 +34,6 @@
 		</div>
 
 	</header>
-	
-	<br>
 
 	<?php
 	require("connect_db.php");
@@ -30,10 +42,11 @@
 
 	$result=mysqli_query($conexion,$query);
 	?>
-
-	<table class="Mostrar" border = "3" cellpadding = "10" cellspacing = "10">
+	
+	<div class="table-responsive">
+	<table class="table table-bordered table-hover">
 		<thead>
-			<tr>
+			<tr class="info">
 				<th colspan = "1" scope = "colgroup">PID</th>
 				<th colspan = "1" scope = "colgroup">NOMBRE</th>
 				<th colspan = "1" scope = "colgroup">PRIORIDAD</th>
@@ -54,12 +67,28 @@
 		}
 		?>
 	</table>
-
-
-	<br>
+	</div>
+	
 	<div id=btn2>
 		<input type="button" class="btnNuevoP" value="NUEVO PROCESO" onclick="location='index.php'"/>
 	</div>
+	<br>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted"> 
+				<div align="right">
+					<h6>.</h6>
+					<img align="right" src="img/proceso.png" width="100" height="100"/>
+					<h6> Kimberly Gacés Pérez .</h6>
+					<h6> Laura de la Ossa Rivera  .</h6>
+				</div>
+        	
+
+        </span>
+      </div>
+    </footer>
+
 
 	<?php 
 

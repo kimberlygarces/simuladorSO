@@ -24,7 +24,7 @@ video{
 
 
 .main h1 {
-	text-align: center;
+	
 }
 
 
@@ -131,7 +131,7 @@ button:hover{
   	background-color:#fdfefe;
   	opacity:0.6;
    	filter:alpha(opacity=90); /* IE < 9.0 */ 
-   	 
+   	 text-align: center;
 	margin:0 auto ; 
 	height:90px;
 	width:1200px;

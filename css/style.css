@@ -1,0 +1,78 @@
+
+.main{
+	background: #04B431;
+}
+
+
+
+table {
+	
+	font-family: Georgia, serif;
+	text-align: center;
+}
+
+
+h1, h2, h4 {
+	
+	font-family: Georgia, serif;
+	text-align: center;
+	color: ##04B431;
+}
+
+.jumbotron {
+	
+	font-family: Georgia, serif;
+	
+
+}
+
+
+.footer {
+ 
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 120px;
+  background-color: #f5f5f5;
+
+  font-family: Georgia, serif;
+}
+
+button:hover{
+
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+	
+}
+
+
+#btn1{
+
+	text-align: center;
+   	opacity:0.6;
+   	filter:alpha(opacity=90); /* IE < 9.0 */ 
+	MARGIN: 0 auto ; 
+	
+}
+
+#btn2{
+
+	text-align: center;
+   	opacity:0.6;
+   	filter:alpha(opacity=90); /* IE < 9.0 */ 
+	MARGIN: 0 auto ; 
+	
+}
+
+
+video{
+
+	position: fixed;
+	min-width: 100%
+	min-height: 100%;
+	top:50%;
+	left: 50%;
+
+	transform: translatex(-50%) translatey(-50%);
+	z-index: -1;
+}

@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de procesos</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<title>simulador de procesos</title>
-	<link href="css/estilo.css" type="text/css" rel="stylesheet"/> 
-	<link rel="stylesheet" href="img/url">
+</head>
 
+<body>
 
+	<header id=main_header>
 
-	<body background="img/fondo.jpeg">
-
-		<video src="img/fondo.mp4" autoplay loop muted poster="img/fondo.jpeg">
-		</video>
-
-
-		<header id=main_header>
-
-			<div class="main" id="main">
-			<h1><img src="img/proceso.png" width="100" height="100" align="middle"> <i>SIMULADOR DE PROCESOS</i></h1></div>
-
+		<div class="jumbotron" >
+			<div class="container">
+				<div><img align="left" src="img/Logo.png"  width="350" height="70"/><img align="right" src="img/carga.gif" width="70" height="70"/>
+					<h3 align="right">SISTEMAS OPERATIVOS  </h3>
+					<h5 align="right">SIMULADOR DE PROCESOS </h5></div>
+				</div>
+			</div>
 		</header>
 		
 			<br>
 
-
+				<div class="table-responsive">
 		<form method="POST" action="">
 
-			<table class="Proceso"  border = "10" cellpadding = "15" cellspacing = "10">
+			<table class="table table-bordered table-hover" width="100">
 
 				<thead>
 
@@ -54,14 +56,29 @@
 				</tbody>
 			</table>
 		</form>
-
+	</div>
 	</section>
 	<br>
 
 	<div id=btn1>
 		<input  type="button" class="btnListar" value="LISTAR PROCESOS" onclick="location='index2.php'"/>
 	</div>
+	<br>
 
+<footer class="footer">
+		<div class="container">
+			<span class="text-muted"> 
+				<div align="right">
+					<h6>.</h6>
+					<img align="right" src="img/proceso.png" width="100" height="100"/>
+					<h6> Kimberly Gacés Pérez .</h6>
+					<h6> Laura de la Ossa Rivera  .</h6>
+				</div>
+        	
+
+        </span>
+      </div>
+    </footer>
 
 
 	<?php
