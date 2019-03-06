@@ -48,7 +48,9 @@
 					</tr>
 					<tr>
 
-						<td colspan="2" align="center">
+
+
+							<td colspan="2" align="center">
 							<input type="submit" name="submit" value="Registrar"> <input type="reset" name="">
 
 						</td>
@@ -63,16 +65,19 @@
 	<div id=btn1>
 		<input  type="button" class="btnListar" value="LISTAR PROCESOS" onclick="location='index2.php'"/>
 	</div>
+	</div>
 	<br>
 
 <footer class="footer">
 		<div class="container">
 			<span class="text-muted"> 
-				<div align="right">
+
+				<div>
 					<h6>.</h6>
 					<img align="right" src="img/proceso.png" width="100" height="100"/>
-					<h6> Kimberly Gacés Pérez .</h6>
-					<h6> Laura de la Ossa Rivera  .</h6>
+					<h6 align="right"> Kimberly Gacés Pérez .</h6>
+					<h6 align="right"> Laura de la Ossa Rivera  .</h6>
+					<h6>Ing. Antonio Movilla</h6>
 				</div>
         	
 
@@ -92,6 +97,8 @@
 
 
 	<?php 
+
+							
 
 	if(isset($_POST['submit'])){
 

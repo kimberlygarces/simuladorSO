@@ -5,19 +5,21 @@
 	$Nombre = $_POST['Nombre'];
 	$Prioridad = rand(0,2);
 	$Caracteres =$_POST['Caracteres'];
+	
 
+	
 
 	$requerido = strlen($Nombre)*strlen($Caracteres);
 
 	$cons = "SELECT MAX(tl) from Proceso";
 	$res=mysqli_query($conexion, $cons);
 	
+		
 
 
-	if($Nombre=="" || $Caracteres==""){
+	if($Nombre=="" || $Caracteres=="" || $Nombre == $Nombre){
 
-	 echo "::::::Por favor llene todos los campos";
-
+	 echo "No registrado";
 	}else{
 
 		$consulta=("INSERT INTO Proceso (Pid,Nombre,Prioridad,Caracteres) VALUES('','$Nombre',$Prioridad,'$Caracteres')");

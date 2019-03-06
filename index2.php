@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lista de procesos</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lista de procesos</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-		<header id=main_header>
+
+	<header id=main_header>
 
 		<div class="jumbotron" >
 			<div class="container">
@@ -26,7 +27,7 @@
 
 
 
-	<br>
+		<br>
 	<header>
 		
 		<div id="listar" class="listar"> 
@@ -42,6 +43,17 @@
 
 	$result=mysqli_query($conexion,$query);
 	?>
+
+
+<button onclick="myFunction()">Calcular Rafaga</button>
+
+	<script>
+		function myFunction() {
+			var str = "caracteres";
+			var n = str.length;
+			document.getElementById("demo").innerHTML = n;
+		}
+	</script>
 	
 	<div class="table-responsive">
 	<table class="table table-bordered table-hover">
@@ -51,6 +63,7 @@
 				<th colspan = "1" scope = "colgroup">NOMBRE</th>
 				<th colspan = "1" scope = "colgroup">PRIORIDAD</th>
 				<th colspan = "1" scope = "colgroup">CARACTERES</th>
+				<th colspan = "1" scope = "colgroup">RAFAGA</th>
 			</tr>
 		</thead>
 
@@ -61,7 +74,10 @@
 				<th><?php echo $mostrar['Nombre']?></th>
 				<th><?php echo $mostrar['Prioridad']?></th>
 				<th><?php echo $mostrar['caracteres']?></th>
-			</tr>
+
+				<th><p id="demo"></p></th>
+	
+				</tr>
 
 			<?php
 		}
@@ -71,17 +87,34 @@
 	
 	<div id=btn2>
 		<input type="button" class="btnNuevoP" value="NUEVO PROCESO" onclick="location='index.php'"/>
+			<input type="button" class="btnNuevoP" value="BORRAR" onclick="location='index.php'"/>
+
+
 	</div>
+
+	<div id=Borrar>
+		<form action="delete.php" method="post" name="form">
+			<imput type="text" name="nombre"/><br/>
+			<imput type="submit" value="Borrar"/>
+		</form>
+
+	</div>
+
+	<script language="JavaScript" type="text/javascript">
+		alert("Listado de procesos registrados en la base de datos");
+	</script>
 	<br>
 
 	<footer class="footer">
 		<div class="container">
 			<span class="text-muted"> 
-				<div align="right">
+				
+				<div>
 					<h6>.</h6>
 					<img align="right" src="img/proceso.png" width="100" height="100"/>
-					<h6> Kimberly Gacés Pérez .</h6>
-					<h6> Laura de la Ossa Rivera  .</h6>
+					<h6 align="right"> Kimberly Gacés Pérez .</h6>
+					<h6 align="right"> Laura de la Ossa Rivera  .</h6>
+					<h6>Ing. Antonio Movilla</h6>
 				</div>
         	
 
